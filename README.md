@@ -101,3 +101,45 @@ Additional formatting:
 The analysis shows a strong concentration of revenue in the Government segment, indicating it is the primary driver of sales performance in this dataset. In contrast, Channel Partners contribute the least to total sales, suggesting a potential area for growth or strategic review.
 
 ---
+
+## KPI Cards
+
+### Objective
+
+Create KPI summary cards to highlight the main business metrics in the dashboard header.
+
+---
+
+## KPI Visuals Created
+
+Three **Card visuals** were added to the report page:
+
+### KPIs:
+- **Total Sales**
+- **Total Profit**
+- **Total Units Sold**
+
+### Configuration:
+- Added descriptive titles to each KPI card
+- Adjusted font sizes for better readability
+- Aligned all cards horizontally across the top of the report page
+- Renamed the report page to **"Overview"**
+
+---
+
+## KPI Summary
+
+### Total Sales
+- **Total Sales:** `118,72635026 mill. €`
+
+### Overall Profit
+- **Total Profit:** `16,89370226 mill. €`
+
+### Total Units Sold
+- **Units Sold:** `1 mill.`
+
+---
+
+## Key Takeaway
+
+The KPI cards provide a quick overview of the dataset’s overall business performance, allowing users to immediately identify revenue, profitability, and sales volume at a glance.
