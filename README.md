@@ -1,3 +1,5 @@
+**Author:** Ana Ballock | [LinkedIn](linkedin.com/in/anaballock) | [GitHub](github.com/apballock)
+
 # Financial Sample – Power BI Data Exploration
 
 ## Level 1
@@ -46,7 +48,7 @@ The following data type corrections were applied:
 - `Date` → Date
 - `Year` → Whole Number (Integer)
 - `Units Sold` → Whole Number
-- Financial fields (`Sales`, `Profit`, `COGS`, `Manufacturing Price`, `Discounts`) → Decimal Number
+- Financial fields (`Sales`, `Profit`, `COGS`, `Manufacturing Price`, `Discounts`) → Fixed Decimal Number (currency)
 
 ---
 
