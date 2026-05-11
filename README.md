@@ -3,7 +3,7 @@
 ## Dataset Overview
 
 - **Source:** Power BI Sample Dataset (Financial Sample)
-- **Rows:** ~700
+- **Rows:** 700
 - **Columns:** 16
 
 ---
