@@ -143,3 +143,56 @@ Three **Card visuals** were added to the report page:
 ## Key Takeaway
 
 The KPI cards provide a quick overview of the dataset’s overall business performance, allowing users to immediately identify revenue, profitability, and sales volume at a glance.
+
+---
+
+## Data Modeling & DAX Measures  
+### Sales by Country on a Map
+
+###  Objective
+
+Visualize the geographic distribution of sales using a map visual and interactive filtering.
+
+---
+
+## Visualization Created
+
+A **Map visual** was added to display total sales by country.
+
+### Configuration:
+- **Location:** Country
+- **Bubble Size:** Sales
+
+To enable geographic visuals, map visuals were activated in:
+
+`File → Options → Security → Enable Map Visuals`
+
+---
+
+## Interactive Filter
+
+A **Slicer visual** was added next to the map to filter data dynamically by year.
+
+### Slicer Configuration:
+- **Field:** Year
+
+The slicer was tested successfully by selecting different years and confirming that the map updated interactively.
+
+---
+
+## Business Insight
+
+### Which country has the highest total sales?
+- **United States** has the highest total sales in the dataset.
+
+### Does the ranking change between years?
+- The overall ranking remains relatively consistent across years, although some countries show variations in sales volume depending on the selected year.
+
+---
+
+## Key Takeaway
+
+The map visualization provides a clear geographic overview of sales performance across countries. Adding the Year slicer improves interactivity and allows users to analyze trends and regional performance over time.
+
+---
+
