@@ -1,6 +1,7 @@
 # Financial Sample – Power BI Data Exploration
 
-## Dataset Overview
+## Level 1
+### Exercise 1 - Dataset Overview
 
 - **Source:** Power BI Sample Dataset (Financial Sample)
 - **Rows:** 700
@@ -63,7 +64,7 @@ The dataset contains **700 rows and 16 columns** representing financial sales tr
 
 ---
 
-## First Visualization: Sales by Segment
+## Exercise 2 - First Visualization: Sales by Segment
 
 ### Objective
 
@@ -102,7 +103,7 @@ The analysis shows a strong concentration of revenue in the Government segment, 
 
 ---
 
-## KPI Cards
+## Exercise 3 - KPI Cards
 
 ### Objective
 
@@ -146,8 +147,8 @@ The KPI cards provide a quick overview of the dataset’s overall business perfo
 
 ---
 
-## Data Modeling & DAX Measures  
-### Sales by Country on a Map
+## Level 2 - Data Modeling & DAX Measures  
+### Exercise 1 - Sales by Country on a Map
 
 ###  Objective
 
@@ -196,7 +197,7 @@ The map visualization provides a clear geographic overview of sales performance 
 
 ---
  
-### Monthly Sales Trend (Time Series)
+### Exercise 2 - Monthly Sales Trend (Time Series)
 
 ### Objective
 
@@ -235,7 +236,7 @@ The time series analysis highlights monthly fluctuations in both sales and profi
 
 ---
 
-### First DAX Measures
+### Exercise 3 - First DAX Measures
 
 ### Objective
 
