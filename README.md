@@ -431,3 +431,120 @@ The dashboard combines financial KPIs, customer segmentation, geographic distrib
 ![Sales Dashboard](screenshots/nivel3_ejerc1_dashboard.png)
 
 ---
+
+## Exercise 2 – Year-over-Year (YoY) Sales Analysis
+
+### Objective
+
+Create advanced DAX measures to compare current sales performance against the previous year and analyze business growth trends over time.
+
+---
+
+## DAX Measures Created
+
+The following DAX measures were initially created:
+
+### Sales PY
+
+```DAX
+Sales PY =
+CALCULATE(
+    SUM('financials'[Sales]),
+    SAMEPERIODLASTYEAR('financials'[Date])
+)
+```
+
+### Sales YoY %
+
+```DAX
+Sales YoY % =
+DIVIDE(
+    SUM('financials'[Sales]) - [Sales PY],
+    [Sales PY]
+) * 100
+```
+
+---
+
+## Challenge Encountered
+
+While building the YoY bar chart, Power BI returned the error:
+
+> `Error al capturar los datos`
+
+The issue occurred because the sample dataset contains a limited time range (2013–2014) and does not provide a fully continuous historical date structure required for reliable `SAMEPERIODLASTYEAR()` calculations in monthly visualizations.
+
+Although the measures worked in Card visuals, the bar chart failed when attempting to break the calculation down by month.
+
+---
+
+## Troubleshooting Process
+
+Several validation and debugging steps were performed:
+
+- Verified that the `Date` column was correctly formatted as **Date**
+- Confirmed that **Auto Date/Time Intelligence** was enabled
+- Tested the measure using a Card visual
+- Attempted an alternative DAX approach using `DATEADD()`
+- Applied defensive logic using `IF(ISBLANK())` to avoid null comparison errors
+
+Alternative measure tested:
+
+```DAX
+Sales PY =
+CALCULATE(
+    SUM('financials'[Sales]),
+    DATEADD('financials'[Date], -1, YEAR)
+)
+```
+
+Despite these adjustments, the dataset limitations continued to affect monthly YoY rendering.
+
+---
+
+## Final Solution Implemented
+
+Instead of forcing an unstable YoY calculation, the analysis was redesigned into a more reliable and business-friendly year comparison visualization.
+
+### Final Visualization:
+A **Clustered Bar Chart** comparing monthly sales between 2013 and 2014.
+
+### Configuration:
+- **X-Axis:** Month Name
+- **Y-Axis:** Sales
+- **Legend:** Year
+
+Additional elements added:
+- Card visual showing total Sales
+- Segment slicer for interactive filtering
+- Custom chart title:
+  `Sales Comparison 2013 vs 2014`
+
+---
+
+## Business Insight
+
+### Which months showed stronger sales performance?
+The visualization shows that several months in **2014 outperformed 2013**, especially during the later months of the year, reinforcing the seasonal growth trend previously identified in the dashboard analysis.
+
+### What was the overall YoY growth pattern?
+Although a traditional YoY percentage calculation was limited by dataset constraints, the side-by-side comparison clearly indicates overall sales growth between years in multiple monthly periods.
+
+---
+
+## Key Takeaway
+
+This exercise demonstrated not only DAX measure creation, but also an important real-world analytics skill: adapting analysis strategies when data limitations impact calculation reliability.
+
+Rather than forcing inaccurate outputs, the solution was redesigned into a cleaner comparative visualization that still communicates year-over-year business performance effectively.
+
+This reflects a core principle in business intelligence work:
+> choosing reliable and interpretable analysis over technically fragile metrics.
+
+---
+
+## Screenshot
+
+### Sales Comparison by Year
+
+![YoY Analysis](screenshots/nivel3_ejerc2_dax.png)
