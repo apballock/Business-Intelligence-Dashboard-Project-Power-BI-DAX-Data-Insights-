@@ -401,7 +401,7 @@ To improve readability and presentation quality:
 - Visuals were aligned into a clean dashboard layout
 - A header text box was added with the following title:
 
-`Sales Dashboard | Ana Ballock | 2025`
+`Sales Dashboard | Ana Ballock | 2026`
 
 The final dashboard was designed to balance business storytelling, usability, and visual clarity.
 
