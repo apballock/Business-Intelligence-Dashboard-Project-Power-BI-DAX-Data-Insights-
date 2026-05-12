@@ -346,3 +346,88 @@ Using DAX measures combined with conditional formatting provides a more analytic
 ![Profit Matrix](screenshots/nivel2_ejerc3_profitmatrix.png)
 
 ---
+
+## Level 3 – Full Dashboard & Advanced Features  
+### Exercise 1 – Complete Sales Dashboard
+
+### Objective
+
+Build a fully interactive sales dashboard by combining KPIs, charts, geographic analysis, and time series visualizations into a single report page.
+
+---
+
+## Dashboard Overview
+
+A new report page named **"Sales Dashboard"** was created to consolidate the main business metrics and visual insights into one interactive dashboard.
+
+### Visuals Included:
+- KPI Cards:
+  - Total Sales
+  - Total Profit
+  - Units Sold
+- Clustered Bar Chart:
+  - Sales by Segment
+- Map Visualization:
+  - Sales by Country
+- Line Chart:
+  - Monthly Sales vs Profit Trend
+
+---
+
+## Interactive Features
+
+Two slicers were added to filter the entire dashboard dynamically.
+
+### Slicers:
+- Year
+- Country
+
+All visuals were connected through Power BI’s default **cross-filtering** behavior, enabling interactive analysis between charts.
+
+### Example:
+Selecting a segment in the bar chart automatically filters:
+- the map visualization
+- the monthly trend chart
+- KPI metrics
+
+This improves dashboard usability and supports exploratory analysis.
+
+---
+
+## Dashboard Design
+
+To improve readability and presentation quality:
+- A consistent Power BI theme was applied
+- Visuals were aligned into a clean dashboard layout
+- A header text box was added with the following title:
+
+`Sales Dashboard | Ana Ballock | 2025`
+
+The final dashboard was designed to balance business storytelling, usability, and visual clarity.
+
+---
+
+## Business Insights
+
+### 1. Government is the Main Revenue Driver
+The **Government** segment generates the highest total sales in the dataset, making it the primary contributor to overall revenue performance.
+
+### 2. Sales Performance is Strongly Concentrated in the United States
+The geographic analysis shows that the **United States** consistently leads total sales volume compared to other countries, indicating a dominant market presence.
+
+### 3. Sales and Profit Increase Toward Year-End
+The monthly trend visualization reveals a seasonal pattern where both **sales and profit peak during the final months of the year**, especially in Q4. This suggests stronger business activity and higher purchasing behavior during year-end periods.
+
+---
+
+## Key Takeaway
+
+The dashboard combines financial KPIs, customer segmentation, geographic distribution, and time-based analysis into a centralized business intelligence solution. Interactive filtering and cross-visual analysis allow users to quickly identify revenue drivers, profitability patterns, and market trends.
+
+---
+
+## Dashboard Preview
+
+![Sales Dashboard](screenshots/nivel3_ejerc1_dashboard.png)
+
+---
